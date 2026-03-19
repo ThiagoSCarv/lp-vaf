@@ -1,14 +1,14 @@
 import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
-export const textVariant = cva("font-sans", {
+export const textVariant = cva("", {
 	variants: {
 		variant: {
-			"title-4xl": "font-playfair text-4xl lg:text-5xl font-bold leading-tight",
-			"title-3xl": "font-playfair font-bold text-3xl lg:text-5xl",
-			"title-2xl": "font-playfair font-semibold text-2xl",
-			"text-playfair-lg": "font-playfair font-semibold text-lg",
-			"text-playfair-3xl": "font-playfair font-bold text-3xl",
+			"title-4xl": "font-display text-4xl lg:text-5xl font-bold leading-tight",
+			"title-3xl": "font-display font-bold text-3xl lg:text-5xl",
+			"title-2xl": "font-display font-semibold text-2xl",
+			"text-playfair-lg": "font-display font-semibold text-lg",
+			"text-playfair-3xl": "font-display font-bold text-3xl",
 			"bold-raleway-sm": "font-raleway font-bold text-sm",
 			"bold-raleway-base": "font-raleway font-bold text-sm lg:text-base",
 			"light-raleway-lg": "font-raleway text-lg lg:text-xl font-light",

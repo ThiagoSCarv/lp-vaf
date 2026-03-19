@@ -12,8 +12,9 @@
   --color-yellow-dark: #423922;
   --color-green-base: #27c25e;
 
+  --font-sans: "Raleway", sans-serif;
   --font-raleway: "Raleway", sans-serif;
-  --font-playfair: "Playfair Display", serif;
+  --font-display: "Playfair Display", Georgia, serif;
 
   --shadow-sm: 0px 4px 8px 0px rgba(54, 23, 45, 0.05);
   --gold-gradient: linear-gradient(
