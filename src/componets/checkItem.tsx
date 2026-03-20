@@ -15,7 +15,7 @@ export default function CheckItem({
 }: CheckItemProps) {
 	return (
 		<div
-			className="flex items-center gap-2 bg-gray-400 border border-gray-300 rounded-lg px-5 py-3"
+			className="flex items-center gap-2 bg-gray-500 rounded-lg px-5 py-3"
 			{...props}
 		>
 			<Icon svg={Check} className="stroke-yellow fill-none w-6 h-6" />
