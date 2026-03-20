@@ -23,7 +23,11 @@ export default function HeroSection({ className, ...props }: HeroSectionProps) {
 				<div className="absolute inset-0 overlay-dark"></div>
 			</div>
 			<div className="flex flex-col justify-center items-center relative z-10 container mx-auto px-6 text-center max-w-4xl">
-				<Text as="span" variant="light-raleway-sm" className="text-yellow mb-6">
+				<Text
+					as="span"
+					variant="light-raleway-sm"
+					className="text-yellow mb-6 tracking-[0.3em]"
+				>
 					VICTOR & ANA FILMES
 				</Text>
 				<Text as="h1" variant="title-4xl" className="text-gray-100 mb-6">
