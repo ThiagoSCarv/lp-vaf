@@ -15,7 +15,7 @@ export default function DifferentialSection({
 	...props
 }: DifferentialSectionProps) {
 	return (
-		<section className="py-24 bg-gray-400" {...props}>
+		<section className="py-24 bg-gray-350" {...props}>
 			<div className="container mx-auto px-6">
 				<div className="text-center mb-16 max-w-2xl mx-auto">
 					<Text

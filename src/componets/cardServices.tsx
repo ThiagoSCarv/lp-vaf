@@ -21,7 +21,7 @@ export default function CardServices({
 }: CardServicesProps) {
 	return (
 		<div
-			className="bg-gray-400 border border-gray-300 rounded-xl p-8 md:p-10 hover:border-yellow transition-colors duration-500 group flex flex-col gap-6"
+			className="bg-gray-400 border border-gray-350 rounded-xl p-8 md:p-10 hover:border-yellow transition-colors duration-500 group flex flex-col gap-6"
 			{...props}
 		>
 			<div className="flex flex-col gap-5">
