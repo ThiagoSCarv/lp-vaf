@@ -20,7 +20,7 @@ export default function CardSocialProof({
 }: CardSocialProofProps) {
 	return (
 		<div
-			className="bg-gray-400 border border-gray-200 rounded-xl p-8 relative flex flex-col gap-4"
+			className="bg-gray-400 border border-gray-300 rounded-xl p-8 relative flex flex-col gap-4"
 			{...props}
 		>
 			<div className="flex items-center">
@@ -33,7 +33,7 @@ export default function CardSocialProof({
 				</div>
 				<Icon
 					svg={Quote}
-					className="stroke-yellow-dark fill-none ml-auto w-6 h-6"
+					className="stroke-yellow-dark fill-none ml-auto w-8 h-8"
 				/>
 			</div>
 			<Text
