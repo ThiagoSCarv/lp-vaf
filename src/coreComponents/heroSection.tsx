@@ -38,7 +38,7 @@ export default function HeroSection({ className, ...props }: HeroSectionProps) {
 					e fortalecem marcas.
 				</Text>
 				<Text as="p" variant="light-raleway-lg" className="text-gray-300 mb-10">
-					Casamentos emocionantes e produções corporeativas modernas, com
+					Casamentos emocionantes e produções corporativas modernas, com
 					qualidade, cuidado e experiência personalizada.
 				</Text>
 				<div className="max-w-110">
