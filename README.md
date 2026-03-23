@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+Arquitetura do Código
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O projeto foi estruturado utilizando uma arquitetura baseada em componentes, seguindo boas práticas do React e visando organização, reutilização e escalabilidade.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Estrutura de Pastas
 
-## React Compiler
+A aplicação está organizada da seguinte forma:
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+src/
+ ├── components/
+ ├── assets/
+ ├── App.tsx
+ └── main.tsx
 
-## Expanding the ESLint configuration
+- **components/**: Contém os componentes reutilizáveis da interface
+- **assets/**: Armazena imagens, ícones e arquivos estáticos
+- **App.tsx**: Componente principal responsável por estruturar a página
+- **main.tsx**: Responsável por inicializar a aplicação
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Componentização
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+A interface foi dividida em componentes independentes, cada um com uma responsabilidade específica:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Hero**: Apresentação inicial e proposta de valor  
+- **VideoSection**: Exibição do portfólio audiovisual  
+- **Diferenciais**: Destaque dos benefícios do serviço  
+- **ProvaSocial**: Depoimentos de clientes  
+- **Pacotes**: Organização dos serviços oferecidos  
+- **Formulario**: Captação de leads  
+- **CTA**: Chamada final para ação  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Essa abordagem facilita:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Reutilização de código  
+- Manutenção do projeto  
+- Escalabilidade futura  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+Fluxo da Aplicação
+
+O fluxo da aplicação é simples e linear:
+
+1. O usuário acessa a página
+2. Visualiza a proposta de valor (Hero)
+3. Interage com conteúdo visual (vídeo/portfólio)
+4. Analisa diferenciais e provas sociais
+5. Avalia os serviços disponíveis
+6. Realiza a ação principal (preencher formulário ou contato)
+
+---
+
+Organização e Boas Práticas
+
+Foram aplicados princípios importantes de desenvolvimento:
+
+- Separação de responsabilidades  
+- Código modular  
+- Componentes reutilizáveis  
+- Estrutura limpa e organizada  
+
+---
+
+Escalabilidade
+
+A arquitetura permite futuras melhorias, como:
+
+- Integração com APIs (ex: envio de formulário)
+- Implementação de rotas (caso o projeto evolua)
+- Adição de novos componentes sem impactar o restante da aplicação
+
+---
+
+Considerações Técnicas
+
+O uso de React com TypeScript contribui para:
+
+- Maior segurança no desenvolvimento  
+- Melhor organização do código  
+- Facilidade na identificação de erros  
+
+---
+
+Conclusão
+
+A arquitetura adotada garante um projeto organizado, escalável e alinhado com boas práticas de desenvolvimento front-end, além de facilitar futuras manutenções e evoluções da aplicação.
